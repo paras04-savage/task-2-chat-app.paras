@@ -1,0 +1,204 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #e5ddd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= LOGIN ================= */
+.login-container {
+  width: 320px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= CHAT LAYOUT ================= */
+.chat-wrapper {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  background: #efeae2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 220px;
+  background: #111b21;
+  color: white;
+  padding: 15px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.online-user {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* ================= CHAT ================= */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #efeae2;
+}
+
+/* HEADER */
+.chat-header {
+  height: 55px;
+  background: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+/* MESSAGES AREA */
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: linear-gradient(
+    rgba(229, 221, 213, 0.95),
+    rgba(229, 221, 213, 0.95)
+  );
+}
+
+/* MESSAGE BUBBLES */
+.bubble {
+  max-width: 65%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+/* SENT (RIGHT) */
+.sent {
+  background: #d9fdd3;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+/* RECEIVED (LEFT) */
+.received {
+  background: white;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+}
+
+/* USERNAME */
+.user {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* TIME */
+.time {
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* TYPING */
+.typing {
+  font-size: 13px;
+  color: #555;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+/* ================= INPUT ================= */
+.input-box {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #f0f2f5;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  body {
+    align-items: stretch;
+  }
+
+  .chat-wrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .bubble {
+    max-width: 80%;
+  }
+}
