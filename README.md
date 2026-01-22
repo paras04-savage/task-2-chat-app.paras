@@ -84,3 +84,7 @@ The final output is a **fully functional Real-Time Chat Application** that allow
 
 ---
 
+
+<img width="1366" height="606" alt="Image" src="https://github.com/user-attachments/assets/af9c63be-89c5-4649-80e3-feb9ada6101c" />
+
+<img width="1366" height="606" alt="Image" src="https://github.com/user-attachments/assets/4f5940e8-850d-4e72-8c55-55c87cb44e39" />
